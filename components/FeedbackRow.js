@@ -1,4 +1,4 @@
-import { Box, Code, Switch } from '@chakra-ui/react';
+import { Box, Code, Switch, Button } from '@chakra-ui/react';
 import { Td } from './Table';
 
 import DeleteFeedbackButton from './DeleteFeedbackButton';
@@ -23,7 +23,9 @@ const FeedbackRow = ({ id, author, text, route, status }) => {
         <Switch color="green" />
       </Td>
       <Td>
-        <DeleteFeedbackButton />
+        <Button fontWeight="bold" variantColor="red" ml={3}>
+          Delete
+        </Button>
       </Td>
     </Box>
   );

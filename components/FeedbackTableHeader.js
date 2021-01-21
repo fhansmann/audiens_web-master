@@ -6,7 +6,8 @@ import {
   BreadcrumbLink,
   Heading,
   Flex,
-  Box
+  Box,
+  Button
 } from '@chakra-ui/react';
 
 const FeedbackTableHeader = () => (
@@ -14,12 +15,15 @@ const FeedbackTableHeader = () => (
     <Breadcrumb>
       <BreadcrumbItem>
         <NextLink href="/feedback" passHref>
-          <BreadcrumbLink>Feedback</BreadcrumbLink>
+          <BreadcrumbLink>Applications</BreadcrumbLink>
         </NextLink>
       </BreadcrumbItem>
     </Breadcrumb>
     <Flex justifyContent="space-between">
-      <Heading mb={8}>All Feedback</Heading>
+      <Heading mb={8}>All Applications</Heading>
+      <Button fontWeight="medium" colorScheme="teal" mr={4}>
+        + Add Position
+      </Button>
     </Flex>
   </Box>
 );

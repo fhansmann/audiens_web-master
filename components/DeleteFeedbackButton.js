@@ -1,4 +1,3 @@
-import React, { useState, useRef } from 'react';
 import {
   AlertDialog,
   AlertDialogBody,
@@ -13,17 +12,8 @@ import {
 const DeleteFeedbackButton = () => {
   return (
     <>
-      <IconButton
-        aria-label="Delete feedback"
-        icon="delete"
-        variant="ghost"
-        onClick={() => setIsOpen(true)}
-      />
-      <AlertDialog
-        isOpen={isOpen}
-        leastDestructiveRef={cancelRef}
-        onClose={onClose}
-      >
+      <IconButton aria-label="Delete feedback" icon="delete" variant="ghost" />
+      <AlertDialog>
         <AlertDialogOverlay />
         <AlertDialogContent>
           <AlertDialogHeader fontSize="lg" fontWeight="bold">
@@ -33,15 +23,8 @@ const DeleteFeedbackButton = () => {
             Are you sure? You can't undo this action afterwards.
           </AlertDialogBody>
           <AlertDialogFooter>
-            <Button ref={cancelRef} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button
-              fontWeight="bold"
-              variantColor="red"
-              onClick={onDelete}
-              ml={3}
-            >
+            <Button>Cancel</Button>
+            <Button fontWeight="bold" variantColor="red" ml={3}>
               Delete
             </Button>
           </AlertDialogFooter>

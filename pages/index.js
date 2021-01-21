@@ -12,10 +12,8 @@ const Home = () => {
             audiens
           </Heading>
           <Text as="span" fontWeight="medium" display="inline">
-            Audio burns with human information.
-          </Text>
-          <Text as="span" fontWeight="medium" display="inline" mb={4}>
-            Audiens is the easiest way to submit and review covers letters.
+            Audio burns with human information. Leverage it to hire the best
+            talent.
           </Text>
           <LoginButtons />
         </Flex>

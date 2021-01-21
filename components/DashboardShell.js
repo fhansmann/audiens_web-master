@@ -24,16 +24,11 @@ const DashboardShell = ({ children }) => {
           h="60px"
         >
           <Flex align="center">
-            <NextLink href="/" passHref>
-              <Link>
-                <Icon name="logo" size="24px" mr={8} />
-              </Link>
-            </NextLink>
             <NextLink href="/sites" passHref>
-              <Link mr={4}>Sites</Link>
+              <Link mr={4}>Applications</Link>
             </NextLink>
             <NextLink href="/feedback" passHref>
-              <Link>Feedback</Link>
+              <Link>Settings</Link>
             </NextLink>
           </Flex>
         </Flex>
